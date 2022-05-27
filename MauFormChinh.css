@@ -1,0 +1,23 @@
+div.header{
+    float: top;
+    background-color:#6699FF;
+    color:black;
+    text-align: center;
+    height: 120px;
+    border-radius: 10px;
+}
+.right{
+    float: right;
+    margin: 17px 20px;
+}
+.button {
+    background-color: #6699FF;
+    border: solid 3px;
+    border-color:white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
