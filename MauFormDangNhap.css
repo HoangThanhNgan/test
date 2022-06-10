@@ -43,7 +43,7 @@ input.thongtin{
     font-size: 20px;
     width:315px;
 }
-.DK{
+a{
     background-color: none;
     width: 300px;
     height:40px;
@@ -56,12 +56,16 @@ input.thongtin{
     color:black;
     float:left;
 }
+a:hover{
+    color: #000000b8;
+}
 .TrangChu{
     margin: 15px 500px 15px 60px;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63EZ-ICeIVXO5mnFLyHgaar_qkPnOQ9hy9w&usqp=CAU');
+    background: url('https://cdn-icons-png.flaticon.com/512/3504/3504599.png');
     width: 90px;
     height: 90px;
     background-size: cover;
+    border: none;
 }
 .canleNutDN
 {
