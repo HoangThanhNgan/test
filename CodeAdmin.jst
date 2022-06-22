@@ -1,0 +1,69 @@
+function KhachHang(){
+
+    var FormKH = document.getElementById("KhachHang");
+    var FormSP = document.getElementById("SanPham");
+    var FormDH = document.getElementById("DonHang");
+    var FormTK = document.getElementById("ThongKe");
+    FormKH.style.display = "block";
+    FormSP.style.display = "none";
+    FormDH.style.display = "none";
+    FormTK.style.display = "none";
+}
+function SanPham(){
+    var FormKH = document.getElementById("KhachHang");
+    var FormSP = document.getElementById("SanPham");
+    var FormDH = document.getElementById("DonHang");
+    var FormTK = document.getElementById("ThongKe");
+    FormKH.style.display = "none";
+    FormSP.style.display = "block";
+    FormDH.style.display = "none";
+    FormTK.style.display = "none";
+}
+function DonHang(){
+    var FormKH = document.getElementById("KhachHang");
+    var FormSP = document.getElementById("SanPham");
+    var FormDH = document.getElementById("DonHang");
+    var FormTK = document.getElementById("ThongKe");
+    FormKH.style.display = "none";
+    FormSP.style.display = "none";
+    FormDH.style.display = "block";
+    FormTK.style.display = "none";
+}
+function ThongKe(){
+    var FormKH = document.getElementById("KhachHang");
+    var FormSP = document.getElementById("SanPham");
+    var FormDH = document.getElementById("DonHang");
+    var FormTK = document.getElementById("ThongKe");
+    FormKH.style.display = "none";
+    FormSP.style.display = "none";
+    FormDH.style.display = "none";
+    FormTK.style.display = "block";
+}
+function deleteRow(row){
+    var d = row.parentNode.parentNode.rowIndex;
+    document.getElementById('BangKH').deleteRow(d);
+ }
+ function deleteRowSP(row){
+    var d = row.parentNode.parentNode.rowIndex;
+    document.getElementById('BangSP').deleteRow(d);
+ }
+ var id=8;
+ function Add() {
+    var Ten = document.getElementById('Ten')["value"];
+    var SL=document.getElementById('SL').value;
+    var Gia=document.getElementById('Gia');
+    var Link=document.getElementById('Ten');
+    var Ten=document.getElementById('Ten');
+    var Ten=document.getElementById('Ten');
+    var Ten=document.getElementById('Ten');
+    alert("Thêm Thanh Công!");
+    var x=document.getElementById('BangSP').insertRow(9);
+		var a = x.insertCell(0);
+		var b = x.insertCell(1);
+        var c = x.insertCell(2);
+        var d = x.insertCell(3);
+        var e = x.insertCell(4);
+        var f = x.insertCell(5);
+		a.innerHTML=id;
+		b.innerHTML=Ten;
+}
