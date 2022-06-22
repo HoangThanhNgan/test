@@ -5,68 +5,21 @@
     </head>
     <body>
         <script language="javascript" src="FormChinh.js"></script>
-        <div class="NenGioHang" id="GioHang">
-          <div class="GioHang">
-            <div class="close" id="Close"><strong>x</strong></div>
+        <div class="header">
+            <button class="TrangChu" onclick="location.href='file:///D:/ThuchanhWWeb/TrangWebBanLen/FormChinh.html'"></button>
+            <button class="button" onclicl="location.href='file:///C:/Users/KyThuat88/Desktop/Ng%C3%A2n/LTWeb/TrangWebBanLen/CodeFormDangKyhtml.html'"><strong>Đăng Nhập</strong></button>
+            <button class="button"><strong>Đăng Ký</strong></button>
+            <div class="Top-content Margin"><strong>HỖ TRỢ</strong></div>
+            <div class="Top-content Margin"><strong>LIÊN HỆ</strong></div>
+            <div class="Top-content Margin"><strong>GIỚI THIỆU</strong></div>
             <script language="javascript">
-              var button = document.getElementById("Close");
+              var button = document.getElementById("ButtonGioHang");
               var modal = document.getElementById("GioHang");
               button.onclick = function(){
-                  modal.style.display = "none";
-              }</script>
-            <div class="cart-row">
-              <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-              <span class="cart-price cart-header cart-column">Giá</span>
-              <span class="cart-quantity cart-header cart-column">Số Lượng</span>
-            </div>
-            <div class="cart-items">
-              <div class="cart-row">
-              <div class="cart-item cart-column">
-                  <img class="cart-item-image" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/262789910_492431415429885_3910416109427797406_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=xZfYIHGnvCMAX_J8BZG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVID8qN8O-a-j3g_KYHK6yzaxJR7nFoAelxwV7iKqVLYLA&oe=62D5B063" width="100" height="100">
-                  <span class="cart-item-title">Len Milk Cotto</span>
-              </div>
-              <span class="cart-price cart-column">40000đ</span>
-              <input class="cart-quantity-input" type="number" value="2" min="0">
-              <button class="btn btn-danger" type="button">Xóa</button>
-            </div>
-            <div class="cart-items">
-              <div class="cart-row">
-              <div class="cart-item cart-column">
-                  <img class="cart-item-image" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287636806_799755037661138_6367913265498080354_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=S8jQPxZhVZEAX9VYmHH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKR5iVC1-pj4dgz_Z7CFsh9N0ZM2VH7iJZkYmvu8d0CDA&oe=62D87A8D" width="100" height="100">
-                  <span class="cart-item-title">Len Milk bò</span>
-              </div>
-              <span class="cart-price cart-column">13000đ</span>
-              <input class="cart-quantity-input" type="number" value="2" min="0">
-              <button class="btn btn-danger" type="button">Xóa</button>
-            </div>
-              <script language="javascript">
-                var remove_cart = document.getElementsByClassName("btn-danger");
-                for (var i = 0; i < remove_cart.length; i++) {
-                    var button = remove_cart[i]
-                    button.addEventListener("click", function () {
-                    var button_remove = event.target
-                  button_remove.parentElement.parentElement.remove()
-                  })
-                }</script>
-              </div>
-          </div>
+                  modal.style.display = "block";
+              }
+          </script>
         </div>
-        </div>
-        <div class="header">
-          <button class="TrangChu" onclick="location.href='file:///D:/ThuchanhWWeb/TrangWebBanLen/FormChinh.html'"></button>
-          <button class="ButtonKH"><strong>Hoàng Thúy</strong></button>
-          <button class="ButtonGioHang" id="ButtonGioHang"></button>
-          <div class="Top-content Margin"><strong>HỖ TRỢ</strong></div>
-          <div class="Top-content Margin"><strong>LIÊN HỆ</strong></div>
-          <div class="Top-content Margin"><strong>GIỚI THIỆU</strong></div>
-          <script language="javascript">
-            var button = document.getElementById("ButtonGioHang");
-            var modal = document.getElementById("GioHang");
-            button.onclick = function(){
-                modal.style.display = "block";
-            }
-        </script>
-      </div>
         <div class="Top"><h1></h1></div>
         <div class="tab" id="tab">
             <button class="tablinks" onclick="openCity(event, 'LenDong')"><strong>Len Đông</strong></button>
@@ -74,6 +27,7 @@
             <button class="tablinks" onclick="openCity(event, 'QueDan')"><strong>Que Đan</strong></button>
             <button class="tablinks" onclick="openCity(event, 'KimMoc')"><strong>Kim Móc</strong></button>
             <button class="tablinks" onclick="openCity(event, 'KimKhau')"><strong>Kim Khâu</strong></button>
+            <button class="tablinks" onclick="openCity(event, 'Khac')"><strong>Khác</strong></button>
           </div>
         </script>
           <div id="LenDong" class="tabcontent">
@@ -81,76 +35,71 @@
               <img id ="Anh" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/262789910_492431415429885_3910416109427797406_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=xZfYIHGnvCMAX_J8BZG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVID8qN8O-a-j3g_KYHK6yzaxJR7nFoAelxwV7iKqVLYLA&oe=62D5B063" style="width:200px;height:220px;">
               <h4 id="TenSP">Len Milk cotton</h4>
               <h3 id="GiaSP">₫40.000</h3>
-              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <script language="javascript">
-                var button = document.getElementById("ButtonThemVaoGio");
-                button.onclick = function(){
-                    alert("Đã thêm sản phẩm vào giỏ");
-                }</script>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287636806_799755037661138_6367913265498080354_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=S8jQPxZhVZEAX9VYmHH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKR5iVC1-pj4dgz_Z7CFsh9N0ZM2VH7iJZkYmvu8d0CDA&oe=62D87A8D" style="width:200px;height:220px;">
               <h4>Len Milk bò</h4>
               <h3>₫13.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img id="Anh" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/286176566_713489939906276_779800468209155123_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=AEF6nOGe0xUAX827AKG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKh0XDNCkeSiuBQAWZi3C8Fg10wXnh4NzOCynH6IMCCfg&oe=62D605FC" style="width:200px;height:220px;">
               <h4 id="TenSP">Mohair sợi to</h4>
               <h3 id="GiaSP">₫40.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287133714_402361961837087_4388396037595864615_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=-8yTwrkBlL4AX8zHtVS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKDm_vhn1Y7l9RRwOkKFyGVdSJbmY8HyLgE9MgJbaQzcg&oe=62D8AA1F" style="width:200px;height:220px;">
               <h4>Mohair sợi nhỏ</h4>
               <h3>₫30.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287352218_373802121405693_1841324735267117761_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=-45eeb2jGjEAX94ij_Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVI3ZfmjyEP2cvo_OA73pzPkO8-zJmHltiAaQxK7uSJb0w&oe=62D74ED1" style="width:200px;height:220px;">
               <h4>Len merino lông cừu</h4>
               <h3>₫80.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/289482892_516764233572244_5230301102491117808_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=D59-mJ_8nisAX9txnfV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIVE-RHjq1ZIBBzpkUcI3dBU-Sy29MQGBBHgtm9ofGCSQ&oe=62D886B6" style="width:200px;height:220px;">
               <h4>Len rainbow cotton</h4>
               <h3>₫45.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287290846_757166922385825_2628304656113983563_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=HOvQCvS8X18AX9mnxdx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKKMQn1f6DLmojOuu3HJqYdaVYVSPW7nY7vJCh8GeOC6A&oe=62D8BFA2" style="width:200px;height:220px;">
               <h4>Nako mohair</h4>
               <h3>₫39.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/286197345_740116340467761_420557923698792522_n.png?stp=dst-png_s600x600&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=TH3fgpYRrAUAX8pdbpf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKQgXeI2vTzjivJhvaYNJeYAzOYz-iYa_SXgx4tr0Lsuw&oe=62D7730E" style="width:200px;height:220px;">
               <h4>Nako Denim</h4>
               <h3>₫79.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/286375505_1841097446098928_794930909198634740_n.png?stp=dst-png_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=HcC6hTKtOFIAX_TWdhj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIm2lOTz_CKQZDPj_NGlILQKoOKhDMHiM3rtgRghlDk8A&oe=62D5E3E4" style="width:200px;height:220px;">
               <h4>Len bông xù</h4>
               <h3>₫24.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288511174_463393692262221_733800607562159289_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=5uTSRnvm3IIAX8EGxez&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL43pXlUb2EnFj9xuPgS32FOCw6qS0xtE1YQK2n_tS93g&oe=62D88794" style="width:200px;height:220px;">
               <h4>Len babylife yarn</h4>
               <h3>₫24.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
           </div>
           
@@ -159,71 +108,71 @@
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/271239965_1299904927172929_3458401662952613674_n.png?stp=dst-png_p403x403&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=nrrepri-91EAX9IcIRi&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJtjEyHUr-9w07moTKeejoCbcYb-20we64aRR8nw--whA&oe=62D7D505" style="width:200px;height:220px;">
               <h4>Cotton vietnam</h4>
               <h3>₫11.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288172473_729756421609628_7436434455779327194_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=fiCVDfAHsCUAX9knwwr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIMBM6ch0E5ymM_RriceiPumKgeg8gO5CNxF9l7GOZh3w&oe=62D621AB" style="width:200px;height:220px;">
               <h4>Cotton 100%</h4>
               <h3>₫9.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288177607_1632026250513269_7152755303351215577_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=O__1DtV9DyYAX9P4-WG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJlZH8GrLU_pKA9bwxYz8yTZnjxR4lFbYrYuwKk6_VtUA&oe=62D7B4A6" style="width:200px;height:220px;">
               <h4>Nr2</h4>
               <h3>₫44.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/286099763_1211786422907660_6800079583893452581_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=gk-PHlGOUzEAX96CG3w&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIVZ69qXW9CVvyjEGUGpPGQr7Vj38qDccT-mgnEJrJPDQ&oe=62D5EB02" style="width:200px;height:220px;">
               <h4>Cotton thái</h4>
               <h3>₫29.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287538493_597939351539720_3953486587474373313_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=arysUZ-pX_kAX-gKUlx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLlnk3HaY3ryWOyKwWpVt-C6iK1LmbR0Dm9TBlTC8UeEw&oe=62D8AB9C" style="width:200px;height:220px;">
               <h4>Sợi rayon</h4>
               <h3>₫17.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287395144_5452439161476375_3806013543405550082_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=h3_9VKIXApYAX9HiVJ-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ9mtMtTDNiBamii3oRc7KrOi_r8iCNsxtH9479B-ar9A&oe=62D52E20" style="width:200px;height:220px;">
               <h4>Sợi dệt</h4>
               <h3>₫25.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/283542218_973312943344745_3723530986716303211_n.png?stp=dst-png_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=g19yN5Bh_jAAX-pjGXs&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKjmD5k2j_NNqdc8Yx4vYf88G0-rYB3ebwnjBHZNS_kRA&oe=62D8E1B0" style="width:200px;height:220px;">
               <h4>Sợi vải</h4>
               <h3>₫49.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/285886662_594718988585131_5752982666484094415_n.png?stp=dst-png_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=za1-sppWtT0AX94I3St&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVINzRlojUd6tzIAEXy4o7qm7u7zhL7Jf5UGKm4mjJEiLw&oe=62D5B5FA" style="width:200px;height:220px;">
               <h4>Sợi fingering</h4>
               <h3>₫17.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/283388571_441482454092707_9003120274346331646_n.png?stp=dst-png_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=lS-Exe3_kHMAX-g9fIH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJNGjvKnHeatUCd-mq2LOCuITx3VR19tDz359jrZ2EmLQ&oe=62D74834" style="width:200px;height:220px;">
               <h4>Sợi dệt kim tuyến</h4>
               <h3>₫27.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287215774_1203363457087421_5486659263644509783_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=O_bgwHWdLvUAX8yK868&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKh9NgpWZYclHusN1rQIY9uXdzI8q4aDqQftTUjHiajsQ&oe=62D727D1" style="width:200px;height:220px;">
               <h4>Sợi lace cotton</h4>
               <h3>₫13.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
           </div>
           
@@ -232,49 +181,49 @@
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/261787117_1953477558185843_6363827643128245772_n.png?stp=dst-png_s403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=BNEox-VlRAAAX-5zj61&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJzt-76s7IfXA7PX3cCQNQXlvYuhPLYetApxy1LJpqsZA&oe=62D70A54" style="width:200px;height:220px;">
               <h4>Que đan inox thẳng</h4>
               <h3>₫8.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/284919405_1887754388237166_2334267250047229152_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=I1MxEl8aqj0AX9KDFOW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKtEjYZ_aEANDVJewmbjPNxAV5gNnWg2GqQmZMLAnzCuw&oe=62D7EDF5" style="width:200px;height:220px;">
               <h4>Que đan gỗ thẳng</h4>
               <h3>₫15.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/286675062_584734589682331_210681726869267559_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=gep6cuOqMLsAX_KosCF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJRgDX-mexib-PDhfEglgDdE73ybEYSsLQKZGexxtFO2w&oe=62D61AC7" style="width:200px;height:220px;">
               <h4>Que đan gỗ vòng</h4>
               <h3>₫50.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/288101313_601642744431922_3571947683173558521_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=uY8RhdHr_3UAX-ZLrxr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKEyr2l6K9gNMt0tUWJOtMF_reR2OVxlAPgEI2KiPhmnw&oe=62D7D2F7" style="width:200px;height:220px;">
               <h4>Que đan inox vòng</h4>
               <h3>₫25.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/282752641_580245063454314_2224506659459996509_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ewCeIRS61JQAX9JtHjF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIJnImk8UAZbNZT2HWdjUGo-C5oPKZ3ovjTsuClqoqrUA&oe=62D5611F" style="width:200px;height:220px;">
               <h4>Que đan vặn thừng</h4>
               <h3>₫7.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
-              <button class="ButtonMuaNgay">Mua Ngay</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
+              <button class="ButtonMuaNgay" onclick="ThongBaoKH()">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287325710_564565891852645_332013395019475519_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=wap8ap31jD4AX_Xz6sy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLfpZrKdFiuL-2X-GU3dapQTuogJ4vOZivg4eZBMfBEMQ&oe=62D803A4" style="width:200px;height:220px;">
               <h4>Que đan gỗ 2 đầu</h4>
               <h3>₫8.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/285050078_751063439276900_4634670032265723081_n.png?stp=dst-png_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=sYM0oa5_rOUAX8PQ5v2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ2FBvQIp4QLpq76z4xxXGrJjaMXF2OWIgus-hUUtuMZg&oe=62D71094" style="width:200px;height:220px;">
               <h4>Que đan inox 2 đầu</h4>
               <h3>₫15.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
           </div>
@@ -283,49 +232,49 @@
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/284693513_1248714132333722_1814393095518390749_n.png?stp=dst-png_p403x403&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=tQwXaY2PtnUAX_pYn-3&_nc_oc=AQnSTvYptgVwZavm0uEiRnwnj5YWV2iqL7ILEZL8atkq8YzOar_cpU2S4uNx8lhcK1s1oVhFPangf9XZ12g5iStU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ8BoZ6ofJdbVA986q0GjYV5JB9eL7aJeyM6RPE0kGR8g&oe=62D76649" style="width:200px;height:220px;">
               <h4>Kim móc cán nhựa</h4>
               <h3>₫9.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/281683425_779755306538992_1115900836461013852_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=6IygPdUPjgkAX9TGUSm&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVL18O3lefAvxQxNwTXRoS9FjTOn16YwYcpDQRP7FeG8Yg&oe=62D80D0F" style="width:200px;height:220px;">
               <h4>Kim móc cán nhựa 1 đầu</h4>
               <h3>₫20.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/285259400_595707728554377_2080724941841781722_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=qPVMjlV4iOoAX-XbsPt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJwZt7q49C774rFfGYDnhXpPFjletSqhwEMAo68KDYYhA&oe=62D59550" style="width:200px;height:220px;">
               <h4>Kim móc nhôm</h4>
               <h3>₫15.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/284855781_421620929979522_6765037007505468588_n.png?stp=dst-png_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=d2U4tTBr2ocAX8rNhy8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKP_Ly32EpcEJFF_g1kulwS-RD4CTa7JR6CespgPJOjTA&oe=62D89A73" style="width:200px;height:220px;">
               <h4>Kim móc tre</h4>
               <h3>₫13.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/283282668_1095609767998394_7372200487268016675_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=WpTivnQeY7EAX83u9_D&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ8F4m_Mp-3tKyw9bPPtPz1ThZanpp8KFvXYPoreAXS9w&oe=62D5BBA8" style="width:200px;height:220px;">
               <h4>Kim móc Hamanaka</h4>
               <h3>₫176.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/286094552_552804159716293_1967900807493643205_n.png?stp=dst-png_p403x403&_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=b5xzGM4qCm0AX8zRJGT&_nc_ht=scontent.fhan8-1.fna&oh=03_AVIKC2p6NksEo3h-07BKiF3N0byCA6O140-g_Cnb9GAoBA&oe=62D6AB4A" style="width:200px;height:220px;">
               <h4>Kim móc tulip</h4>
               <h3>₫130.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/284475062_1084017422195848_8546428283695079806_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=Fng1Cdmd6kEAX8r_vc0&_nc_ht=scontent.fhan8-1.fna&oh=03_AVLsETmDDjj3ptvFSSR3-9Ql6qIq_6_cTB6KTWMpQP9Mmw&oe=62D7D98A" style="width:200px;height:220px;">
               <h4>Kim móc SKC</h4>
               <h3>₫30.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
           </div>
@@ -334,49 +283,49 @@
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/269866846_1058395341400503_3800823824965403905_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=fun6lrWjyvUAX-tFzWA&_nc_ht=scontent.fhan8-1.fna&oh=03_AVJuBHmnlN4LbTUCTWXuZeVdjnNV9b6gtOYnOHjVliEsLw&oe=62D671A6" style="width:200px;height:220px;">
               <h4>Kim khâu len inox</h4>
               <h3>₫3.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/279633171_726412008705163_1497401875053675917_n.png?stp=dst-png_p403x403&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=yIzIvYttogQAX8KK64l&_nc_ht=scontent.fhan8-1.fna&oh=03_AVKDHJcHkBxLviDdQ7TGlQKMe2AJmrvPozxU2BW3CrbqXA&oe=62D71797" style="width:200px;height:220px;">
               <h4>Kim khâu len nhựa</h4>
               <h3>₫2.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/285641441_381979157244661_2822452747980539871_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=XpvdJmcSSlAAX8nMjyE&_nc_oc=AQlYguhEt4AYmpJhWsSe92sZTcK3FPKi6tl55NlQD3R7SUDTMW6dckCNzcQ-juB_ock&_nc_ht=scontent.fhan8-1.fna&oh=03_AVKWJBEi19afafk2cfSB7B-JSFYPHfT5X_ugRYAF_Tp8CA&oe=62D849E4" style="width:200px;height:220px;">
               <h4>Kim khâu len đầu cong</h4>
               <h3>₫5.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/283910227_557406689428555_1902268733351601555_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=7UtKSnEdzTgAX9GbKYm&_nc_ht=scontent.fhan8-1.fna&oh=03_AVJRkk5p3hULjKeIj-VclpWQVVoh6kpVvxMgD1CB5TLeGQ&oe=62D66E2F" style="width:200px;height:220px;">
               <h4>Ghim đánh dấu (10 cái)</h4>
               <h3>₫5.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/283289296_423561579443776_66696424387173238_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=qtK3LThce70AX8eO7IO&_nc_ht=scontent.fhan8-1.fna&oh=03_AVKDwCK7nak1df0quH395CIT3txbnLRApl5ZdNE9bZrtIA&oe=62D5C5C0" style="width:200px;height:220px;">
               <h4>Kim đánh dấu mũi móc</h4>
               <h3>₫25.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/288945861_1689625358061228_4188665908020624132_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=axCf_AV-sq8AX-pR0rG&_nc_ht=scontent.fhan8-1.fna&oh=03_AVJcwK7YPi7fbmJkMFBuKw0g3ziLWnq44A9KAf3QGXCRKA&oe=62D86290" style="width:200px;height:220px;">
               <h4>Bộ dụng cụ móc len</h4>
               <h3>₫140.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
             <div class="SanPham">
               <img src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/287379132_440338991267179_6740618395473902347_n.png?stp=dst-png_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=FtLZ28HoMMYAX-4g7ta&_nc_ht=scontent.fhan8-1.fna&oh=03_AVK_BX54op3vWWAskIxATGq5-KqMZ_vD8nbJ49Z7UJvCYQ&oe=62D8A72C" style="width:200px;height:220px;">
               <h4>Bộ 100 chi tiết móc len</h4>
               <h3>₫90.000</h3>
-              <button class="ButtonThemVaoGio">Thêm vào Giỏ</button>
+              <button class="ButtonThemVaoGio" id="ButtonThemVaoGio" onclick="ThongBao()">Thêm vào Giỏ</button>
               <button class="ButtonMuaNgay">Mua Ngay</button>
             </div>
           </div>

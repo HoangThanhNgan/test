@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  }
+.Menu{
+    float: top;
+
+    color: white;
+    flex-direction: column;
+    border: solid 2px rgb(12, 12, 78);
+    background-color:rgb(37, 37, 116) ;
+}
+.ButtonMenu{
+    margin-left: 4%;
+    font-size: 20px;
+    height: 70px;
+    width: 20%;
+    color: white;
+    border: none;
+    background-color:rgb(37, 37, 116) ;
+    border-radius: 2px;
+    margin-bottom: 20px
+}
+.ButtonMenu:hover{
+    color: black;
+    background-color: orange;
+}
+.ButtonMenu:focus{
+    background-color: rgb(215, 160, 58);
+    color: black;
+}
+.KhachHang{
+    float: center;
+    display: block;
+}
+.KhachHang-Button{
+    border: solid 1px red;
+    height: 200px;
+    width: 100%;
+}
+.ButtonXoaKH{
+    background-color:red;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.ButtonXoaKH:hover{
+    color: black;
+}
+.BangKhachHang{
+    margin-left: auto; margin-right: auto;
+    margin-top: 70px;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid;
+    text-align: center;
+}
+.SanPham{
+    float: left;
+    display: none;
+}
+.BangSanPham{
+    margin-top: 70px;
+    margin-left: auto; margin-right: auto;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid;
+    text-align: center;
+}
+.ButtonThemSP
+{
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: green;
+    border-radius: 2px;
+}
+.ButtonThemSP:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.BangThemSP{
+    margin-left: 20px;
+    float: left;
+    margin-top: 70px;
+    margin-left: auto; margin-right: auto;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid;
+    text-align: center;
+}
+.DonHang{
+    float: center;
+    display: none;
+}
+.BangDonHang{
+    margin-top: 70px;
+    margin-left: auto; margin-right: auto;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid;
+    text-align: center;
+}
+.BangThongKe{
+    margin-top: 70px;
+    margin-left: auto; margin-right: auto;
+    font-family: Arial;
+    font-size: 20px;
+    border: solid;
+    text-align: center;
+}
+.ThongKe{
+    float: center;
+    display: none;
+}
+
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Admin.css"/>
+</head>
+<body>
+    <script language="javascript" src="CodeAdmin.js"></script>
+    <div class="Menu">
+        <hr width="100%" color="gray">
+        <button class="ButtonMenu" id="ButtonKhachHang" onclick="KhachHang()"><strong>Khách Hàng</strong></button>
+        <button class="ButtonMenu" id="ButtonSanPham" onclick="SanPham()"><strong>Sản Phẩm</strong></button>
+        <button class="ButtonMenu" id="ButtonDonHang" onclick="DonHang()"><strong>Đơn Hàng</strong></button>
+        <button class="ButtonMenu" id="ButtonThongKe" onclick="ThongKe()"><strong>Thống Kê</strong></button>
+    </div>
+    <div class="KhachHang" id="KhachHang">
+        <table class="BangKhachHang" border="1" height="500px" id="BangKH">
+            <tr>
+                <th colspan="7" wight="20%" height="20%">DANH SÁCH KHÁCH HÀNG</th>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%"><strong>STT</strong></td>
+                <td ><strong>Tên</strong></td>
+                <td><strong>Tài Khoản</strong></td>
+                <td><strong>Email</strong></td>
+                <td><strong>Số Đơn Mua</strong></td>     
+                <td><strong>Số SP Mua</strong></td> 
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">1</td>
+                <td>Hoàng Thị Thanh Ngân</td>
+                <td>Hoàng Ngân</td>
+                <td>hoangthithanhngan21@gmail.com</td>
+                <td>5</td>
+                <td>11</td>
+                <td><button class="ButtonXoaKH" onclick = "deleteRow(this)"><strong>Xóa</strong></button></td>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">2</td>
+                <td>Hoàng Thị Thanh Thúy</td>
+                <td>Hoàng Thúy</td>
+                <td>hoangthuy@gmail.com</td>
+                <td>2</td>
+                <td>6</td>
+                <td><button class="ButtonXoaKH" onclick = "deleteRow(this)"><strong>Xóa</strong></button></td>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">3</td>
+                <td>Nguyễn Thị Hiển</td>
+                <td>Hiển</td>
+                <td>Hien123@gmail.com</td>
+                <td>9</td>
+                <td>9</td>
+                <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRow(this)"><strong>Xóa</strong></button></td>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">4</td>
+                <td>Trân Văn Nam</td>
+                <td>Nam123</td>
+                <td>NamTran@gmail.com</td>
+                <td>2</td>
+                <td>10</td>
+                <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRow(this)"><strong>Xóa</strong></button></td>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">5</td>
+                <td>Nguyễn Thị Hoài</td>
+                <td>Hoài</td>
+                <td>HoaiNguyen@gmail.com</td>
+                <td>9</td>
+                <td>16</td>
+                <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRow(this)"><strong>Xóa</strong></button></td>
+            </tr>
+        </table>
+        </div>
+        <div class="SanPham" id="SanPham">
+            <table class="BangThemSP" style="border: sloid 1px black ;margin-left: 20px;margin-right: 20px;"  height="500px" id="BangThemSP">
+                <tr>
+                    <th colspan="2"><Strong><u>Thêm Sản Phẩm</u></Strong></th>
+
+                </tr>
+                <tr>
+                    <td><strong>Tên</strong></td>
+                    <td><input type="Text" id="Ten"></td>
+                </tr>
+                <tr>
+                    <td><strong>Giá</strong></td>
+                    <td><input id="Gia"></td>
+                </tr>
+                <tr>
+                    <td><strong>Số Lượng</strong></td>
+                    <td><input id="SL"></td>
+                </tr>
+                <tr>
+                    <td><strong>Phân Loại</strong></td>
+                    <td><input id="PL"></td>
+                </tr>
+                <tr>
+                    <td><strong>Link Hình Ảnh</strong></td>
+                    <td><input id="Link"></td>
+                </tr>
+                <tr>
+                    <td><strong>Số Sản Phẩm Đã Bán</strong></td>
+                    <td><input id="DaBan"></td>
+                </tr>
+                <tr>
+                    <td><strong>Số Sản Phẩm Còn</strong></td>
+                    <td><input  id="Con"></td>
+                </tr>
+                <tr>
+                    <td><button class="ButtonThemSP" id="ThemSP" onclick="Add()"><strong>Thêm</strong></button></td>
+                </tr>
+            </table>
+            <table class="BangSanPham" border="1" height="500px" id="BangSP">
+                <tr>
+                    <th colspan="9" wight="20%" height="20%">DANH SÁCH SẢN PHẨM</th>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%"><strong>STT</strong></td>
+                    <td id="Ten"><strong>Tên</strong></td>
+                    <td><strong>Giá</strong></td>
+                    <td><strong>Số Lượng</strong></td>
+                    <td><strong>Phân Loại</strong></td>
+                    <td><strong>Hình ảnh</strong></td>     
+                    <td><strong>Số SP đã bán</strong></td> 
+                    <td><strong>Số SP còn</strong></td> 
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">1</td>
+                    <td >Len Milk cotton</td>
+                    <td>40.000đ</td>
+                    <td>20</td>
+                    <td>Len đông</td>
+                    <td><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/262789910_492431415429885_3910416109427797406_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=xZfYIHGnvCMAX_J8BZG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVID8qN8O-a-j3g_KYHK6yzaxJR7nFoAelxwV7iKqVLYLA&oe=62D5B063" width="100px" height="100px"></td>     
+                    <td>5</td> 
+                    <td>15</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">2</td>
+                    <td>Len Milk bò</strong></td>
+                    <td>13.000đ</td>
+                    <td>10</td>
+                    <td>Len đông</td>
+                    <td><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/287636806_799755037661138_6367913265498080354_n.png?stp=dst-png_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=S8jQPxZhVZEAX9VYmHH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKR5iVC1-pj4dgz_Z7CFsh9N0ZM2VH7iJZkYmvu8d0CDA&oe=62D87A8D" width="100px" height="100px"></td>    
+                    <td>7</td> 
+                    <td>3</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">3</td>
+                    <td >Mohair sợi to</td>
+                    <td>40.000đ</td>
+                    <td>50</td>
+                    <td>Len đông</td>
+                    <td><img scr="https://scontent.xx.fbcdn.net/v/t1.15752-9/286176566_713489939906276_779800468209155123_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=AEF6nOGe0xUAX827AKG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKh0XDNCkeSiuBQAWZi3C8Fg10wXnh4NzOCynH6IMCCfg&oe=62D605FC"  width="100px" height="100px"></td>    
+                    <td>20</td> 
+                    <td>30</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">4</td>
+                    <td >Mohair sợi nhỏ</td>
+                    <td>30.000đ</td>
+                    <td>5</td>
+                    <td>Len đông</td>
+                    <td><img scr="https://scontent.xx.fbcdn.net/v/t1.15752-9/287133714_402361961837087_4388396037595864615_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=-8yTwrkBlL4AX8zHtVS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKDm_vhn1Y7l9RRwOkKFyGVdSJbmY8HyLgE9MgJbaQzcg&oe=62D8AA1F"  width="100px" height="100px"></td>    
+                    <td>0</td> 
+                    <td>5</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">5</td>
+                    <td >Len merino lông cừu</td>
+                    <td>80.000đ</td>
+                    <td>51</td>
+                    <td>Len đông</td>
+                    <td><img scr="https://scontent.xx.fbcdn.net/v/t1.15752-9/287352218_373802121405693_1841324735267117761_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=-45eeb2jGjEAX94ij_Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVI3ZfmjyEP2cvo_OA73pzPkO8-zJmHltiAaQxK7uSJb0w&oe=62D74ED1" style="width:100px;height:100px;"></td>
+                    <td>11</td> 
+                    <td>40</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">6</td>
+                    <td >Len rainbow cotton</td>
+                    <td>45.000đ</td>
+                    <td>20</td>
+                    <td>Len đông</td>
+                    <td><img scr="https://scontent.xx.fbcdn.net/v/t1.15752-9/289482892_516764233572244_5230301102491117808_n.png?stp=dst-png_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=D59-mJ_8nisAX9txnfV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIVE-RHjq1ZIBBzpkUcI3dBU-Sy29MQGBBHgtm9ofGCSQ&oe=62D886B6" style="width:100px;height:100px;"></td>
+                    <td>10</td> 
+                    <td>10</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+                <tr>
+                    <td wight="20%" height="20%">7</td>
+                    <td >Nako mohair</td>
+                    <td>39.000đ</td>
+                    <td>60</td>
+                    <td>Len đông</td>
+                    <td><img scr="https://scontent.xx.fbcdn.net/v/t1.15752-9/287290846_757166922385825_2628304656113983563_n.png?stp=dst-png_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=HOvQCvS8X18AX9mnxdx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKKMQn1f6DLmojOuu3HJqYdaVYVSPW7nY7vJCh8GeOC6A&oe=62D8BFA2" style="width:100px;height:100px;"></td>
+                    <td>12</td> 
+                    <td>48</td> 
+                    <td><button class="ButtonXoaKH" id="Xoa" onclick = "deleteRowSP(this)"><strong>Xóa</strong></button></td>
+                </tr>
+            </table>
+        </div>
+    <div class="DonHang" id="DonHang">
+    <table class="BangDonHang" border="1"  height="500px" id="BangDonHang">
+        <tr>
+            <th colspan="5"><Strong><u>Thống Kê Đơn Hàng</u></Strong></th>
+        </tr>
+        <tr>
+            <td wight="20%" height="20%"><strong>STT</strong></td>
+                    <td><strong>Mã Đơn Hàng</strong></td>
+                    <td><strong>Tên Sản Phẩm</strong></td>
+                    <td><strong>Phân Loại</strong></td>
+                    <td><strong>Số Lượng</strong></td>     
+        </tr>
+        <tr>
+            <td wight="20%" height="20%">1</td>
+                    <td><strong>Don1</strong></td>
+                    <td><strong>Len Milk cotton</strong></td>
+                    <td><strong>Len Đông</strong></td>
+                    <td><strong>1</strong></td>     
+        </tr>
+        <tr>
+            <td wight="20%" height="20%">2</td>
+                    <td><strong>Don1</strong></td>
+                    <td><strong>Len Milk bò</strong></td>
+                    <td><strong>Len Đông</strong></td>
+                    <td><strong>1</strong></td>     
+        </tr>
+        <tr>
+            <td wight="20%" height="20%">3</td>
+                    <td><strong>Don1</strong></td>
+                    <td><strong>Mohair sợi nhỏ</strong></td>
+                    <td><strong>Len Đông</strong></td>
+                    <td><strong>1</strong></td>     
+        </tr>
+        <tr>
+            <td wight="20%" height="20%">4</td>
+                    <td><strong>Don2</strong></td>
+                    <td><strong>Cotton vietnam</strong></td>
+                    <td><strong>Sợi Hè</strong></td>
+                    <td><strong>1</strong></td>     
+        </tr>
+        </table>
+    </div>
+    <div class="ThongKe" id="ThongKe">
+        <table class="BangThongKe" border="1"  height="300px" id="BangThongKe">
+            <tr>
+                <th colspan="5"><Strong><u>Thống Kê</u></Strong></th>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%"><strong>Số Lượng Khách Hàng</strong></td>
+                        <td><strong>Số Đơn Hàng</strong></td>
+                        <td><strong>Số Sản Phẩm Đã Bán</strong></td>
+                        <td><strong>Số Sản Phẩm Còn</strong></td>
+            </tr>
+            <tr>
+                <td wight="20%" height="20%">6</td>
+                        <td>5</td>
+                        <td>50</td>
+                        <td>246</td>
+            </tr>
+            </table>
+    </div>
+</body>
+</html>
