@@ -1,0 +1,23 @@
+function checkPhoneNumber() {
+    var password=document.getElementById("pw").value;
+    var phone = document.getElementById("phone").value;
+    if(phone == ""){
+        alert("Vui lòng nhập số điện thoại!");
+        return false;
+    }
+        else if(phone !== "0338712806"){
+            alert("Sai tài khoản đăng nhập, vui lòng nhập lại!");
+            return false;
+            }
+            else if(password == ""){
+                alert("Vui lòng nhập mật khẩu!");
+                return false;
+            }
+                else if(password !=="123456"){
+                    alert("Sai mật khẩu đăng nhập, vui lòng nhập lại!");
+                    return false;
+                }
+                    else{
+                        location.href="D:/ThuchanhWWeb/TrangWebBanLen/TrangChu.html";
+                        }
+}

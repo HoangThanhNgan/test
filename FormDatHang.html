@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="MauDatHang.css">
+    <body>
+        <script language="javascript" src="LogicFormDatHang.js"></script>
+        <div class="header">
+            <button class="TrangChu" onclick="location.href='file:///D:/ThuchanhWWeb/TrangWebBanLen/FormChinh.html'"></button>
+            <button class="ButtonKH"><strong>Hoàng Thúy</strong></button>
+            <button class="ButtonGioHang" id="ButtonGioHang"></button>
+            <div class="Top-content Margin"><strong>HỖ TRỢ</strong></div>
+            <div class="Top-content Margin"><strong>LIÊN HỆ</strong></div>
+            <div class="Top-content Margin"><strong>GIỚI THIỆU</strong></div>
+            <script language="javascript">
+              var button = document.getElementById("ButtonGioHang");
+              var modal = document.getElementById("GioHang");
+              button.onclick = function(){
+                  modal.style.display = "block";
+              }
+          </script>
+        </div>
+        <div class="TieuDe"><h1>Thanh Toán</h1></div>
+        <div class="DiaChi">
+            <div class="TieuDe"><h3>Địa Chỉ Nhận Hàng</h3></div>
+            <div class="ThongTin">Tên người nhận:</div><br>
+            <input class="ThongTin" type="text" name="Ten" id="Ten" placeholder="Nhập tên người nhận" tabindex="1"></input><br>
+            <br><div class="ThongTin">Số điện thoại:</div><br>
+            <input class="ThongTin" type="tel" name="SDT" id="SDT" placeholder="Nhập số điện thoại nhận hàng" tabindex="2"></input><br>
+            <br><div class="ThongTin">Địa chỉ nhận hàng:</div><br>
+            <input class="ThongTin" type="text" name="NoiNhan" id="NoiNhan" placeholder="Nhập địa chỉ nhận hàng" tabindex="3"></input><br>
+        </div>
+        <div class="SanPham">
+            <div class="TieuDe"><h3>Sản Phẩm</h3></div>
+            <div class="TenSP">
+                <div class="DeMuc">Tên sản phẩm</div><br>
+                <br><img class="anhmathang" src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/262789910_492431415429885_3910416109427797406_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=hUhhEm7wP6UAX_DTp4e&_nc_ht=scontent.fhan8-1.fna&oh=03_AVLuX9sBOtWvA0lckBn_rBIfjslQq9_YTd4uGAFVoJZpcg&oe=62D9A4E3" width="50px" height="50px"></img>
+                <div class="tenmathang">Len milk cotton</div><br>
+                <img class="anhmathang" src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/287636806_799755037661138_6367913265498080354_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=f1VZ0YWdnrMAX-laAyi&_nc_ht=scontent.fhan8-1.fna&oh=03_AVKNQff60pjj7idPBHa9_gVaqVY_36SlQ8VXTCRvJyVWDg&oe=62D87A8D" width="50px" height="50px"></img>
+                <div class="tenmathang">Len milk bò</div><br>
+                <img class="anhmathang" src="https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/286176566_713489939906276_779800468209155123_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=AEF6nOGe0xUAX_KqnqT&_nc_ht=scontent.fhan8-1.fna&oh=03_AVKlm-s0DaxCN7KHWf3z5nm54TdOqku3zP4TYNOGc7iJoQ&oe=62D9FA7C" width="50px" height="50px"></img>
+                <div class="tenmathang">Len mohair sợi to</div><br>
+            </div>
+            <div class="DonGiaSP">
+                <div class="DeMuc">Đơn giá</div><br>
+                <div class="SLmathang">40.000đ</div>
+                <div class="SLmathang">13.000đ</div>
+                <div class="SLmathang">40.000đ</div>
+            </div>
+            <div class="SoLuongSP">
+                <div class="DeMuc">Số lượng</div><br>
+                <div class="SLmathang">1</div>
+                <div class="SLmathang">2</div>
+                <div class="SLmathang">1</div>
+            </div>
+            <div class="ThanhTienSP">
+                <div class="DeMuc">Thành tiền</div><br>
+                <div class="SLmathang">40.000đ</div>
+                <div class="SLmathang">26.000đ</div>
+                <div class="SLmathang">40.000đ</div>
+            </div>
+            <hr width="95%" color="grey">
+            <br><div class="DeMuc">Lời nhắn cho shop:</div>
+            <input class="LoiNhan" type="text" placeholder="Lưu ý cho shop..."></input><br>
+            <br><div class="TinhTien">Phí vận chuyển:</div>
+            <div class="GiaTien">35.000đ</div><br>
+            <br><div class="TinhTien">Tổng tiền hàng:</div>
+            <div class="GiaTien">106.000đ</div><br>
+            <br><div class="TinhTien">Tổng số tiền:</div>
+            <div class="GiaTien">141.000đ</div><br>
+        </div>
+        <div class="ThanhToan">
+            <div class="TieuDe"><h3>Hình thức thanh toán</h3></div>
+            <input class="PhuongThuc" name="phthuc" type="radio" value="Chuyển khoản"/>Chuyển Khoản<br>
+            <br><input class="PhuongThuc" name="phthuc" type="radio" value="Ship COD"/>Ship Cod
+        </div>
+        <button class="submit" id="submit" type="button" onclick="dathangthanhcong()">Đặt hàng</button>
+    </body>
+</html>
