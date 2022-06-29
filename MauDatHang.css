@@ -13,7 +13,8 @@ div.header{
     padding: 0%;
 }
 .TrangChu{
-    margin: 15px 500px 15px 60px;
+    margin-left: 50px;
+    margin-top: 15px;
     background: url('https://scontent.fhan8-1.fna.fbcdn.net/v/t1.15752-9/286761140_3111196815861244_5734721994971409733_n.png?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=F5aW2t9uJtIAX_AEACO&_nc_oc=AQnOF2C3P4ykh8HBkdu8ni4vYdsk2KJZodZGKRUzjGx4zj2fDFwYDBq0PccHLTnAnaE&_nc_ht=scontent.fhan8-1.fna&oh=03_AVIttx3BrZ0q2zw6KlKxX9xiVaYCz46kSZx_iimAij-V7g&oe=62C51DA0');
     width: 90px;
     height: 90px;

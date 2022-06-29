@@ -33,6 +33,21 @@ body{
   text-align: center;
   font-size: 16px;
 }
+.buttonMuaHang{
+  float: left;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: green;
+  color: white;
+  border: green solid 1px;
+  border-radius: 5px;
+  height: 50px;
+  width: 80px;
+}
+.buttonMuaHang:hover{
+  color: black;
+  background-color: rgb(102, 140, 44);
+}
 .button:hover{
   color: black;
   background-color: white;
@@ -206,8 +221,8 @@ h3{
   }
 .GioHang {
     margin: 0 auto;
-    width: 50%;
-    height: 60%;
+    width: 60%;
+    height: 70%;
     position: relative;
     display: flex;
     flex-direction: column;

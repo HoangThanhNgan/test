@@ -36,6 +36,7 @@ body{
   .button:hover{
     color: black;
     background-color: white;
+    border-color: white;
   }
   .TrangChu{
     float:left;

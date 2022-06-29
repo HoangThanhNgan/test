@@ -44,26 +44,37 @@ function deleteRow(row){
     document.getElementById('BangKH').deleteRow(d);
  }
  function deleteRowSP(row){
+    id=id-1;
     var d = row.parentNode.parentNode.rowIndex;
     document.getElementById('BangSP').deleteRow(d);
  }
  var id=8;
  function Add() {
-    var Ten = document.getElementById('Ten')["value"];
+    var Ten = document.getElementById('Ten').value;
     var SL=document.getElementById('SL').value;
-    var Gia=document.getElementById('Gia');
-    var Link=document.getElementById('Ten');
-    var Ten=document.getElementById('Ten');
-    var Ten=document.getElementById('Ten');
-    var Ten=document.getElementById('Ten');
+    var Gia=document.getElementById('Gia').value;
+    var PL=document.getElementById('PL').value;
+    var Link=document.getElementById('Link').value;
+    var DaBan=document.getElementById('DaBan').value;
+    var Con=document.getElementById('Con').value;
     alert("Thêm Thanh Công!");
-    var x=document.getElementById('BangSP').insertRow(9);
+    var x=document.getElementById('BangSP').insertRow(id+1);
 		var a = x.insertCell(0);
 		var b = x.insertCell(1);
         var c = x.insertCell(2);
         var d = x.insertCell(3);
         var e = x.insertCell(4);
         var f = x.insertCell(5);
+        var g = x.insertCell(6);
+        var h = x.insertCell(7);
+        var i = x.insertCell(8);
 		a.innerHTML=id;
 		b.innerHTML=Ten;
+        c.innerHTML=Gia;
+        d.innerHTML=SL;
+        e.innerHTML=PL;
+        f.innerHTML=Link;
+        g.innerHTML=DaBan;
+        h.innerHTML=Con;
+        id=id+1;
 }

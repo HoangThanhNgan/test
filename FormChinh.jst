@@ -11,6 +11,12 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+function Close()
+{
+              var button = document.getElementById("Close");
+              var modal = document.getElementById("GioHang");
+                  modal.style.display = "none";
+}
 function Hidden(){
   var modal = document.getElementById("GioHang");
   var btn = document.getElementById("ButtonGioHang");
@@ -25,4 +31,7 @@ function ThongBaoKH()
 
 {
   alert("Bạn phải đang nhập trước khi mua sản phẩm!");
+}
+function Them(){
+    alert("Đã thêm sản phẩm vào giỏ");
 }
